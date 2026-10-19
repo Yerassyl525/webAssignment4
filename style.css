@@ -1,0 +1,226 @@
+:root {
+    --green: #0F6B5F;
+    --yellow: #F2A93B;
+    --dark: #16302B;
+    --background: #F4F7F5;
+    --light-green: #E6EFEC;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--dark);
+}
+
+.train-booking-card {
+    --booking-card-padding: clamp(1.25rem, 4vw, 2.5rem);
+    max-width: 760px;
+    padding: var(--booking-card-padding);
+    background-color: #fff;
+    border: 1px solid var(--light-green);
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 35px rgba(22, 48, 43, 0.10);
+}
+
+.train-booking-card h1 {
+    margin: calc(var(--booking-card-padding) * -1) calc(var(--booking-card-padding) * -1) 0.5rem;
+    padding: var(--booking-card-padding);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--green);
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.booking-subtitle {
+    color: #647771;
+}
+
+.form-label,
+legend {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+legend {
+    float: none;
+    width: auto;
+    margin-bottom: 0.75rem;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    padding: 0.75rem 0.9rem;
+    color: var(--dark);
+    background-color: var(--background);
+    border: 1px solid #d6e2dd;
+    border-radius: 0.65rem;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.15);
+}
+
+.form-check-input {
+    border-color: #a8bcb4;
+}
+
+.form-check-input:checked {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.trip-type-options {
+    padding: 1rem;
+    background-color: var(--light-green);
+    border-radius: 0.75rem;
+}
+
+.btn {
+    min-height: 48px;
+    padding: 0.8rem 1.25rem;
+    border-radius: 0.65rem;
+    font-family: inherit;
+    font-weight: 700;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.find-trains-button {
+    color: #fff;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.find-trains-button:hover {
+    color: #fff;
+    background-color: #0b554c;
+    border-color: #0b554c;
+}
+
+.clear-booking-form-button {
+    color: var(--dark);
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.clear-booking-form-button:hover {
+    color: var(--dark);
+    background-color: #e49a28;
+    border-color: #e49a28;
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: 3px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.train-switch-input {
+    width: 2.75rem;
+    height: 1.35rem;
+    background-color: #d2ded8;
+    border-color: #b0c2bc;
+    cursor: pointer;
+}
+
+.train-switch-input:checked {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.train-checkbox-label {
+    font-size: 0.9rem;
+    color: #657771;
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+
+.hackathon-registration-card {
+    max-width: 760px;
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    background-color: #fff;
+    border: 1px solid var(--light-green);
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 35px rgba(22, 48, 43, 0.10);
+}
+
+.hackathon-registration-card input,
+.hackathon-registration-card select,
+.hackathon-registration-card textarea {
+    color: var(--dark);
+}
+
+.hackathon-registration-card input:focus,
+.hackathon-registration-card select:focus,
+.hackathon-registration-card textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.15);
+}
+
+.hackathon-registration-card input:user-invalid,
+.hackathon-registration-card select:user-invalid,
+.hackathon-registration-card textarea:user-invalid {
+    border-color: #dc3545;
+}
+
+.hackathon-registration-card input:user-invalid~.invalid-feedback,
+.hackathon-registration-card select:user-invalid~.invalid-feedback,
+.hackathon-registration-card textarea:user-invalid~.invalid-feedback {
+    display: block;
+}
+
+.hackathon-registration-card input:user-valid,
+.hackathon-registration-card select:user-valid,
+.hackathon-registration-card textarea:user-valid {
+    border-color: #198754;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #16302b;
+    font-family: Arial, sans-serif;
+}
+
+.reservation-card {
+    max-width: 650px;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 28px rgba(22, 48, 43, 0.1);
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.6rem;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: #0f6b5f;
+    box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+}
+
+.btn-reserve {
+    background-color: #0f6b5f;
+    color: white;
+    border: 1px solid #0f6b5f;
+}
+
+.btn-reserve:hover {
+    background-color: #16302b;
+    color: white;
+}
+
+.btn:focus-visible {
+    outline: 3px solid #f2a93b;
+    outline-offset: 3px;
+}
